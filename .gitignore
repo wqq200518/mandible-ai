@@ -1,0 +1,13 @@
+# Ignore generated files from the backup app
+备份vercel/node_modules/
+备份vercel/.next/
+备份vercel/out/
+备份vercel/.env*
+備份vercel/.env*
+
+# Local VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+*.log
