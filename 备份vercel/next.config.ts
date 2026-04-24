@@ -3,6 +3,6 @@ export default {
   reactStrictMode: true,
   output: 'export',
   trailingSlash: true,
-  basePath: '/mandible-ai-public',
-  assetPrefix: '/mandible-ai-public/',
+  basePath: '/mandible-ai',
+  assetPrefix: '/mandible-ai/',
 }
