@@ -42,3 +42,5 @@ jobs:
           publish_dir: 备份vercel/out
           publish_branch: gh-pages
           keep_files: true
+          force_orphan: true
+          allow_empty_commit: true
