@@ -34,12 +34,13 @@ jobs:
           cp -a 备份vercel/.next/server/app/. 备份vercel/out/
           mkdir -p 备份vercel/out/_next/static
           cp -a 备份vercel/.next/static/. 备份vercel/out/_next/static/
+          touch 备份vercel/out/.nojekyll
 
       - name: Deploy to GitHub Pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: 备份vercel/out
+          publish_dir: ./备份vercel/out
           publish_branch: gh-pages
           keep_files: true
           force_orphan: true
